@@ -19,6 +19,14 @@ class SalarySpec extends WordSpec with MustMatchers {
           Salary.wages(100, true) mustEqual "£120"
         }
       }
+    "wages is called and bonus is true" must {
+
+      "return £salary(including bonus rounded to nearest £" in {
+
+        Salary.wages(99, true) mustEqual "£118"
+      }
+    }
+
     }
 
 }
