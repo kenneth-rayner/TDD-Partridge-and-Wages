@@ -17,7 +17,7 @@ class PartridgeSpec extends WordSpec with MustMatchers {
         Partridge.part(Array("Peartree")) mustEqual "Mine's a Pint!"
       }
       "return mines a pint! with 2 !" in{
-        Partridge.part(Array("Peartree","Mutha")) mustEqual "Mine's a Pint!!"
+        Partridge.part(Array("Peartree","Mutha")) mustEqual "Myine's a Pint!!"
       }
     }
 
